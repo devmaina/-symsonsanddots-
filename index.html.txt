@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Symsons and Dots Limited - Building & Civil Engineering Contractors, Heavy Machinery Sales & Rental, Building Materials Suppliers, Mass Excavation, and Logistics in Nairobi, Kenya.">
+    <meta name="keywords" content="Symsons and Dots, construction, civil engineering, heavy machinery, equipment rental, building materials, excavation, logistics, Nairobi, Kenya">
+    <meta name="author" content="Symsons and Dots Limited">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#FF8C00">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.symsonsanddots.co.ke/">
+    <meta property="og:title" content="Symsons and Dots Limited - Construction & Heavy Equipment Solutions">
+    <meta property="og:description" content="Your trusted partner for building, civil engineering, heavy machinery, and logistics in Nairobi, Kenya.">
+    <meta property="og:image" content="https://placehold.co/1200x630/FF8C00/FFFFFF?text=Symsons+%26+Dots">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.symsonsanddots.co.ke/">
+    <meta property="twitter:title" content="Symsons and Dots Limited - Construction & Heavy Equipment Solutions">
+    <meta property="twitter:description" content="Your trusted partner for building, civil engineering, heavy machinery, and logistics in Nairobi, Kenya.">
+    <meta property="twitter:image" content="https://placehold.co/1200x630/FF8C00/FFFFFF?text=Symsons+%26+Dots">
+
+    <title>Symsons and Dots Limited - Building & Civil Engineering Contractors</title>
+
+    <!-- Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Iconify CDN -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <style>
+        /* CSS Variables for Color Palette */
+        :root {
+            --primary-orange: #FF8C00; /* A vibrant orange */
+            --secondary-navy: #1A2E40; /* A deep navy blue */
+            --light-grey: #F0F2F5;
+            --dark-grey: #333;
+            --white: #FFFFFF;
+            --text-color: #444;
+            --heading-color: var(--secondary-navy);
+        }
+
+        /* Basic Reset & Body Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-grey);
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-orange);
+            color: var(--white);
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #E07B00; /* Slightly darker orange */
+            transform: translateY(-2px);
+        }
+
+        .section-heading {
+            text-align: center;
+            font-size: 2.5em;
+            color: var(--heading-color);
+            margin-bottom: 50px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-orange);
+            border-radius: 2px;
+        }
+
+        /* Header & Navigation */
+        .header {
+            background-color: var(--secondary-navy);
+            color: var(--white);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.8em;
+            font-weight: 700;
+            color: var(--primary-orange);
+        }
+
+        .logo iconify-icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            padding: 10px 0;
+            display: block;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-orange);
+        }
+
+        /* Dropdown Menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: var(--secondary-navy);
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+            z-index: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 10px 0;
+            top: 100%; /* Position below the parent link */
+            left: 0;
+        }
+
+        .dropdown-content a {
+            color: var(--white);
+            padding: 12px 20px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            transition: background-color 0.3s ease;
+            font-weight: 400;
+            white-space: nowrap; /* Prevent wrapping */
+        }
+
+        .dropdown-content a:hover {
+            background-color: #2A425A; /* Slightly lighter navy */
+            color: var(--primary-orange);
+        }
+
+        .nav-links li.dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Hamburger Menu (Mobile) */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .hamburger .bar {
+            width: 25px;
+            height: 3px;
+            background-color: var(--white);
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .nav-links.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: var(--secondary-navy);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            padding: 20px 0;
+            gap: 0;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .nav-links.active li {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .nav-links.active .dropdown-content {
+            position: static; /* Make dropdown content flow naturally in mobile */
+            box-shadow: none;
+            background-color: #2A425A;
+            padding: 0;
+            border-radius: 0;
+            margin-top: 10px;
+        }
+
+        .nav-links.active .dropdown-content a {
+            padding: 10px 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 46, 64, 0.7), rgba(26, 46, 64, 0.7)), url('https://placehold.co/1920x800/1A2E40/FFFFFF?text=Construction+Site') no-repeat center center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 100px 20px;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            max-width: 800px;
+        }
+
+        /* General Section Styling */
+        section {
+            padding: 80px 0;
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .about-text h2 {
+            color: var(--heading-color);
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Services & Machines Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .grid-item {
+            background-color: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .grid-item iconify-icon {
+            font-size: 3.5em;
+            color: var(--primary-orange);
+            margin-bottom: 20px;
+        }
+
+        .grid-item img {
+            max-width: 100%;
+            height: 180px; /* Fixed height for consistency */
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .grid-item h3 {
+            font-size: 1.4em;
+            color: var(--heading-color);
+            margin-bottom: 15px;
+        }
+
+        .grid-item p {
+            font-size: 0.95em;
+            color: var(--text-color);
+        }
+
+        /* Projects Section */
+        .project-card {
+            background-color: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .project-content {
+            padding: 25px;
+        }
+
+        .project-content h3 {
+            font-size: 1.5em;
+            color: var(--heading-color);
+            margin-bottom: 10px;
+        }
+
+        .project-content p {
+            font-size: 0.95em;
+            color: var(--text-color);
+        }
+
+        /* Blog & Careers (Simple Placeholder Sections) */
+        .blog-post, .career-item {
+            background-color: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .blog-post h3, .career-item h3 {
+            color: var(--heading-color);
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .blog-post p, .career-item p {
+            color: var(--text-color);
+        }
+
+        /* Contact Section */
+        .contact-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .contact-info, .contact-form-container {
+            flex: 1;
+            min-width: 300px;
+            background-color: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            padding: 40px;
+        }
+
+        .contact-info h3, .contact-form-container h3 {
+            color: var(--heading-color);
+            font-size: 1.8em;
+            margin-bottom: 25px;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-info iconify-icon {
+            font-size: 1.2em;
+            color: var(--primary-orange);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--heading-color);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--primary-orange);
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--secondary-navy);
+            color: var(--white);
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .footer-col {
+            flex: 1;
+            min-width: 250px;
+            margin: 20px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.4em;
+            color: var(--primary-orange);
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary-orange);
+            border-radius: 2px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: var(--white);
+            transition: color 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-orange);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            font-size: 0.9em;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366; /* WhatsApp Green */
+            color: var(--white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2em;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            z-index: 1001;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #1DA851; /* Darker green */
+            transform: scale(1.05);
+        }
+
+        /* Scroll Reveal Animation */
+        .reveal {
+            position: relative;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .nav-links {
+                display: none; /* Hide desktop nav */
+            }
+
+            .hamburger {
+                display: flex; /* Show hamburger */
+            }
+
+            .hero h1 {
+                font-size: 2.8em;
+            }
+
+            .hero p {
+                font-size: 1.1em;
+            }
+
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-image {
+                order: -1; /* Image above text on mobile */
+            }
+
+            .grid-container {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer-col h4::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section-heading {
+                font-size: 2em;
+            }
+
+            .hero h1 {
+                font-size: 2.2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .contact-content {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.5em;
+            }
+
+            .hero h1 {
+                font-size: 1.8em;
+            }
+
+            .hero p {
+                font-size: 0.9em;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+
+    <!-- JSON-LD for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Symsons and Dots Limited",
+      "url": "https://www.symsonsanddots.co.ke",
+      "logo": "https://placehold.co/100x100/FF8C00/FFFFFF?text=SD",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+254-720-664-096",
+        "contactType": "Customer Service",
+        "areaServed": "KE",
+        "availableLanguage": ["en"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "P. O. Box 50125-00200, Outering Rd - Kjd Road- Junction; Utawala Samek Business Centre",
+        "addressLocality": "Nairobi",
+        "addressRegion": "Nairobi County",
+        "addressCountry": "KE"
+      },
+      "sameAs": [
+        "mailto:symsonsdots@gmail.com",
+        "mailto:info@symsonsanddots.co.ke"
+      ],
+      "description": "Symsons and Dots Limited specializes in Building & Civil Engineering Contractors, Sales & Rental of Heavy Machinery, Sale of Machinery Spare Parts, Suppliers of Building Materials, Mass Excavation, Backfilling, Dumping & General Transport and Logistics in Nairobi, Kenya."
+    }
+    </script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="#" class="logo">
+                <iconify-icon icon="ph:gear-six-fill"></iconify-icon>
+                Symsons & Dots
+            </a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#services">Services <iconify-icon icon="ic:round-arrow-drop-down"></iconify-icon></a>
+                        <div class="dropdown-content">
+                            <a href="#services-construction">Construction & Civil Engineering</a>
+                            <a href="#services-machinery-sales">Machinery Sales & Rental</a>
+                            <a href="#services-spare-parts">Machinery Spare Parts</a>
+                            <a href="#services-materials">Building Materials Supply</a>
+                            <a href="#services-excavation">Excavation & Backfilling</a>
+                            <a href="#services-logistics">Transport & Logistics</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#machines">Machines <iconify-icon icon="ic:round-arrow-drop-down"></iconify-icon></a>
+                        <div class="dropdown-content">
+                            <a href="#machines-excavators">Excavators</a>
+                            <a href="#machines-backhoes">Backhoes</a>
+                            <a href="#machines-bulldozers">Bulldozers</a>
+                            <a href="#machines-graders">Graders</a>
+                            <a href="#machines-lowloaders">Low Loaders</a>
+                            <a href="#machines-pavers">Pavers</a>
+                            <a href="#machines-compactors">Compactors</a>
+                            <a href="#machines-dumptrucks">Dump Trucks</a>
+                            <a href="#machines-forklifts">Forklifts</a>
+                            <a href="#machines-cranes">Cranes</a>
+                        </div>
+                    </li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero reveal">
+            <div class="container">
+                <h1>Building Tomorrow, Today.</h1>
+                <p>Your trusted partner in building & civil engineering, heavy machinery, and logistics solutions across Kenya.</p>
+                <a href="#contact" class="btn">Get a Quote</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-us reveal">
+            <div class="container">
+                <h2 class="section-heading">About Symsons & Dots Limited</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Symsons and Dots Limited is a premier firm specializing in a comprehensive range of services including Building & Civil Engineering Contracting, Sales & Rental of Heavy Machinery, and the supply of essential Building Materials. Based in Nairobi, Kenya, we are dedicated to delivering excellence in every project.</p>
+                        <p>Our expertise extends to large-scale operations such as Mass Excavation, efficient Backfilling, reliable Dumping services, and General Transport and Logistics. With a commitment to quality, safety, and client satisfaction, we leverage our extensive experience and state-of-the-art equipment to meet the diverse needs of the construction and infrastructure sectors.</p>
+                        <p>We pride ourselves on our professional approach, timely execution, and the ability to provide tailored solutions that ensure the success of your ventures. Partner with Symsons and Dots Limited for reliable and robust solutions that build the future.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://placehold.co/400x300/FF8C00/FFFFFF?text=About+Us" alt="About Symsons and Dots">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services reveal">
+            <div class="container">
+                <h2 class="section-heading">Our Services</h2>
+                <div class="grid-container">
+                    <div class="grid-item" id="services-construction">
+                        <iconify-icon icon="fa6-solid:helmet-safety"></iconify-icon>
+                        <h3>Building & Civil Engineering Contractors</h3>
+                        <p>From concept to completion, we handle all aspects of building and civil engineering projects with precision and expertise.</p>
+                    </div>
+                    <div class="grid-item" id="services-machinery-sales">
+                        <iconify-icon icon="fa6-solid:truck-pickup"></iconify-icon>
+                        <h3>Sales & Rental of Heavy Machinery</h3>
+                        <p>Offering a wide range of heavy machinery for sale and rental, ensuring your projects have the right equipment.</p>
+                    </div>
+                    <div class="grid-item" id="services-spare-parts">
+                        <iconify-icon icon="fa6-solid:gears"></iconify-icon>
+                        <h3>Sale of Machinery Spare Parts</h3>
+                        <p>Reliable source for genuine and high-quality spare parts to keep your machinery running smoothly.</p>
+                    </div>
+                    <div class="grid-item" id="services-materials">
+                        <iconify-icon icon="fa6-solid:boxes-stacked"></iconify-icon>
+                        <h3>Suppliers of Building Materials</h3>
+                        <p>Providing a comprehensive range of quality building materials for all construction needs.</p>
+                    </div>
+                    <div class="grid-item" id="services-excavation">
+                        <iconify-icon icon="fa6-solid:shovel-basement"></iconify-icon>
+                        <h3>Mass Excavation & Backfilling</h3>
+                        <p>Expert services for large-scale excavation, site preparation, and efficient backfilling operations.</p>
+                    </div>
+                    <div class="grid-item" id="services-logistics">
+                        <iconify-icon icon="fa6-solid:route"></iconify-icon>
+                        <h3>Dumping & General Transport and Logistics</h3>
+                        <p>Efficient and reliable transport and logistics solutions, including material dumping and general hauling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Machines Section -->
+        <section id="machines" class="machines reveal">
+            <div class="container">
+                <h2 class="section-heading">Our Equipment Rentals</h2>
+                <div class="grid-container">
+                    <div class="grid-item" id="machines-excavators">
+                        <img src="https://placehold.co/300x180/1A2E40/FFFFFF?text=Excavator" alt="Excavator">
+                        <h3>Excavators</h3>
+                        <p>Powerful machines for digging, demolition, and heavy lifting.</p>
+                    </div>
+                    <div class="grid-item" id="machines-backhoes">
+                        <img src="https://placehold.co/300x180/1A2E40/FFFFFF?text=Backhoe" alt="Backhoe">
+                        <h3>Backhoes</h3>
+                        <p>Versatile equipment for digging, trenching, and loading.</p>
+                    </div>
+                    <div class="grid-item" id="machines-bulldozers">
+                        <img src="https://placehold.co/300x180/1A2E40/FFFFFF?text=Bulldozer" alt="Bulldozer">
+                        <h3>Bulldozers</h3>
+                        <p>Robust machines for pushing earth, clearing land, and grading.</p>
+                    </div>
+                    <div class="grid-item" id="machines-graders">
+                        <img src="https://placehold.co/300x180/1A2E40/FFFFFF?text=Grader" alt="Grader">
+                        <h3>Graders</h3>
+                        <p>Used for creating flat surfaces, fine grading, and road construction.</p>
+                    </div>
+                    <div class="grid-item" id="machines-lowloaders">
+                        <img src="https://placehold.co/300x180/1A2E40/FFFFFF?text=Low+Loader" alt="Low Loader">
+                        <h3>Low Loaders</h3>
+                        <p>Specialized trailers for transporting heavy and oversized equipment.</p>
+                    </div>
+                    <div class="grid-item" id="machines-pavers">
+                        <img src="https://placehold.co/300x180/1A2E40/FFFFFF?text=Paver" alt="Paver">
+                        <h3>Pavers</h3>
+                        <p>Machines designed for laying asphalt or concrete on roads.</p>
+                    </div>
+                    <div class="grid-item" id="machines-compactors">
+                        <img src="https://placehold.co/300x180/1A2E40/FFFFFF?text=Compactor" alt="Compactor">
+                        <h3>Compactors</h3>
+                        <p>Essential for compacting soil, gravel, concrete, and asphalt.</p>
+                    </div>
+                    <div class="grid-item" id="machines-dumptrucks">
+                        <img src="https://placehold.co/300x180/1A2E40/FFFFFF?text=Dump+Truck" alt="Dump Truck">
+                        <h3>Dump Trucks</h3>
+                        <p>Heavy-duty trucks for transporting loose material like sand, gravel, and dirt.</p>
+                    </div>
+                    <div class="grid-item" id="machines-forklifts">
+                        <img src="https://placehold.co/300x180/1A2E40/FFFFFF?text=Forklift" alt="Forklift">
+                        <h3>Forklifts</h3>
+                        <p>Industrial trucks used to lift and move materials over short distances.</p>
+                    </div>
+                    <div class="grid-item" id="machines-cranes">
+                        <img src="https://placehold.co/300x180/1A2E40/FFFFFF?text=Crane" alt="Crane">
+                        <h3>Cranes</h3>
+                        <p>Machines equipped with hoists, wire ropes, and sheaves for lifting and lowering materials.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects reveal">
+            <div class="container">
+                <h2 class="section-heading">Our Recent Projects</h2>
+                <div class="grid-container">
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/FF8C00/FFFFFF?text=Project+1" alt="Project 1: Commercial Building">
+                        <div class="project-content">
+                            <h3>Commercial Building Construction</h3>
+                            <p>Completed a multi-story commercial complex in Nairobi CBD, delivering on time and within budget.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/FF8C00/FFFFFF?text=Project+2" alt="Project 2: Road Infrastructure">
+                        <div class="project-content">
+                            <h3>Rural Road Infrastructure</h3>
+                            <p>Developed several kilometers of all-weather roads, enhancing connectivity for local communities.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/FF8C00/FFFFFF?text=Project+3" alt="Project 3: Residential Development">
+                        <div class="project-content">
+                            <h3>Modern Residential Development</h3>
+                            <p>Constructed a series of modern residential units, focusing on sustainable and comfortable living.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog reveal">
+            <div class="container">
+                <h2 class="section-heading">Latest from Our Blog</h2>
+                <div class="blog-post">
+                    <h3>The Future of Sustainable Construction in Kenya</h3>
+                    <p>Explore the innovative trends and practices shaping environmentally friendly building in the region.</p>
+                    <a href="#" class="btn" style="padding: 8px 15px; font-size: 0.9em;">Read More</a>
+                </div>
+                <div class="blog-post">
+                    <h3>Choosing the Right Heavy Machinery for Your Project</h3>
+                    <p>A guide to selecting the optimal equipment for efficiency and cost-effectiveness on your construction site.</p>
+                    <a href="#" class="btn" style="padding: 8px 15px; font-size: 0.9em;">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Careers Section -->
+        <section id="careers" class="careers reveal">
+            <div class="container">
+                <h2 class="section-heading">Join Our Team</h2>
+                <div class="career-item">
+                    <h3>Opportunities at Symsons & Dots</h3>
+                    <p>We are always looking for talented and passionate individuals to join our growing team. Explore a rewarding career with us in civil engineering, machinery operations, logistics, and more.</p>
+                    <p>Check back regularly for new job postings or send your CV to <a href="mailto:careers@symsonsanddots.co.ke" style="color: var(--primary-orange);">careers@symsonsanddots.co.ke</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact reveal">
+            <div class="container">
+                <h2 class="section-heading">Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p><iconify-icon icon="material-symbols:location-on"></iconify-icon> P. O. Box 50125-00200, Nairobi- KENYA</p>
+                        <p>Outering Rd - Kjd Road- Junction; Utawala Samek Business Centre</p>
+                        <p><iconify-icon icon="material-symbols:call"></iconify-icon> Tel: 0720 664 096, 0797 469 494</p>
+                        <p><iconify-icon icon="material-symbols:mail"></iconify-icon> Email: <a href="mailto:symsonsdots@gmail.com" style="color: var(--text-color);">symsonsdots@gmail.com</a></p>
+                        <p><iconify-icon icon="material-symbols:mail"></iconify-icon> Email: <a href="mailto:info@symsonsanddots.co.ke" style="color: var(--text-color);">info@symsonsanddots.co.ke</a></p>
+                        <p><iconify-icon icon="material-symbols:language"></iconify-icon> Website: <a href="https://www.symsonsanddots.co.ke" target="_blank" style="color: var(--text-color);">symsonsanddots.co.ke</a></p>
+                    </div>
+                    <div class="contact-form-container">
+                        <h3>Send Us a Message</h3>
+                        <form class="contact-form" onsubmit="event.preventDefault(); submitContactForm();">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email:</label>
+                            <email type="email" id="email" name="email" required>
+
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" required>
+
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                        <div id="formMessage" style="margin-top: 20px; text-align: center; font-weight: 600;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <p>Symsons and Dots Limited is committed to delivering high-quality construction, machinery, and logistics solutions across Kenya.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#machines">Machines</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><iconify-icon icon="material-symbols:call"></iconify-icon> +254 720 664 096</p>
+                <p><iconify-icon icon="material-symbols:mail"></iconify-icon> info@symsonsanddots.co.ke</p>
+                <p><iconify-icon icon="material-symbols:location-on"></iconify-icon> Nairobi, Kenya</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; <span id="currentYear"></span> Symsons and Dots Limited. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/254720664096" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <iconify-icon icon="ri:whatsapp-fill"></iconify-icon>
+    </a>
+
+    <script>
+        // Get current year for footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Hamburger menu functionality
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('open'); // Optional: Add class for hamburger animation
+        });
+
+        // Close mobile nav when a link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    hamburger.classList.remove('open');
+                }
+            });
+        });
+
+        // Scroll Reveal Animation
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15 /* Adjust as needed: percentage of element visible to trigger */
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); // Stop observing once revealed
+                }
+            });
+        }, observerOptions);
+
+        revealElements.forEach(el => {
+            observer.observe(el);
+        });
+
+        // Basic Contact Form Submission (for demonstration, no actual backend)
+        function submitContactForm() {
+            const formMessage = document.getElementById('formMessage');
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && subject && message) {
+                formMessage.style.color = 'green';
+                formMessage.textContent = 'Thank you for your message, ' + name + '! We will get back to you soon.';
+                // In a real application, you would send this data to a server here.
+                document.querySelector('.contact-form').reset();
+            } else {
+                formMessage.style.color = 'red';
+                formMessage.textContent = 'Please fill in all fields.';
+            }
+        }
+    </script>
+</body>
+</html>
